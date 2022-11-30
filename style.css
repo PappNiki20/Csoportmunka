@@ -47,7 +47,10 @@ p{
 
 ul{
   color: rgb(64, 48, 117);
-}
+  
+  }
+
+
 
 
 @media only screen and (max-width: 400px) {
