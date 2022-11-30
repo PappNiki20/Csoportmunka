@@ -6,7 +6,7 @@
   
 }
 
-li {
+li a {
   float: left;
 }
 
@@ -33,22 +33,74 @@ body{
 }
 
 h2{
-  color: rgb(38, 23, 88)
+  color: rgb(38, 23, 88);
+  font-size: 30px;
 }
 
 h1{
   color: rgb(19, 7, 58);
   text-align: center;
+  font-size: 60px;
 }
 
 p{
   color: rgb(64, 48, 117);
+  font-size: 18px;
 }
 
-ul{
+.tartalom{
   color: rgb(64, 48, 117);
+  font-size: 18px;
+}
+main{
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
+  grid-template-areas: 
+  "h h"
+  "n n"
+  "ar as"
+  "ar as"
+  "f f"
+  ;
 }
 
+header{
+  border: 6px solid;
+  background-color: rgb(64, 48, 117);
+  grid-area: h;
+}
+
+footer{
+  text-align: center;
+  grid-area: f;
+}
+.tartalom{
+  text-align: justify;
+ 
+}
+img{
+  border: 5px solid;
+  border-color: rgb(64, 48, 117);
+}
+
+
+
+nav {
+  padding: 0;
+  grid-area: n;
+}
+article {
+  grid-area: ar;
+}
+img{
+  margin: 30px;
+}
+
+aside {
+  padding-left: 10px;
+  border: 5px solid;
+  grid-area: as;
+}
 
 @media only screen and (max-width: 400px) {
   article {
