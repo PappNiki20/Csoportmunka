@@ -1,0 +1,81 @@
+body{
+    color: rgb(211, 241, 250);
+    font-size: large;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    background-image: url(képek/Niki/veg6.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.tartalom{
+    text-align: justify;
+   
+}
+h1{
+  text-align: center;
+}
+h2{
+    text-align: center;
+  }
+  .balra{
+    margin: 30px;
+    width: 300px;
+    border: 6px double rgb(137, 218, 246);
+  }
+  .jobbra{
+    margin: 30px;
+    width: 300px;
+    border: 6px double rgb(137, 218, 246);
+  }
+  
+ main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "ar as"
+    "ar as"
+    "f f"
+    ;
+  }
+
+  header{
+    border: 6px double rgb(137, 218, 246);
+    grid-area: h;
+  }
+  nav {
+   
+    padding: 0;
+    grid-area: n;
+  }
+  article {
+   
+    grid-area: ar;
+  }
+  img{
+    margin: 30px;
+  }
+ 
+aside {
+  margin-left: 80px;
+  border: 6px double rgb(137, 218, 246);
+  grid-area: as;
+}
+
+footer{
+    
+  text-align: center;
+  border: 6px double rgb(137, 218, 246);
+    grid-area: f;
+}
+ 
