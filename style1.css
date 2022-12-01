@@ -1,8 +1,8 @@
 body{
     text-align:center ;
-      color: rgb(211, 241, 250);
+      color: rgb(239, 240, 240);
       
-      font-weight: bolder;
+      
       padding: 0;
       margin: 0;
       background-image: url(képek/Andras/hatter.jpg);
@@ -109,11 +109,12 @@ body{
   }
   @media only screen and (max-width: 600px) {
     article {
-      grid-template-columns: 3fr;
+      grid-template-columns: 2fr;
     }
     main {
       display: grid;
-      grid-template-columns: 3fr;
+      text-align: center;
+      grid-template-columns: 2fr;
       grid-template-areas: 
       "h "
       "as"

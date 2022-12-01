@@ -1,8 +1,8 @@
 body{
     text-align:center ;
-      color: rgb(124, 163, 114);
+      color: rgb(75, 194, 95);
       
-      font-weight: bolder;
+      
       padding: 0;
       margin: 0;
       background-image: url(képek/Timi/hatter.jpg);
@@ -109,11 +109,12 @@ body{
   }
   @media only screen and (max-width: 600px) {
     article {
-      grid-template-columns: 3fr;
+      grid-template-columns: 2fr;
     }
     main {
+        text-align: center;
       display: grid;
-      grid-template-columns: 3fr;
+      grid-template-columns: 2fr;
       grid-template-areas: 
       "h "
       "as"

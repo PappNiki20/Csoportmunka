@@ -2,7 +2,7 @@ body{
   text-align:center ;
     color: rgb(211, 241, 250);
    
-    font-weight: bolder;
+   
     padding: 0;
     margin: 0;
     background-image: url(képek/Niki/veg6.jpg);
@@ -37,7 +37,9 @@ li a {
   text-decoration: none;
   border-bottom: 1px groove gray;
 }
-
+img {
+  width: 200px;
+}
 li a:link{
   background-color: rgb(137, 218, 246);
   margin: 5px;
@@ -109,11 +111,12 @@ footer{
 }
 @media only screen and (max-width: 600px) {
   article {
-    grid-template-columns: 3fr;
+    grid-template-columns: 2fr;
   }
   main {
     display: grid;
-    grid-template-columns: 3fr;
+    text-align: center;
+    grid-template-columns: 2fr;
     grid-template-areas: 
     "h "
     "as"
