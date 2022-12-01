@@ -1,0 +1,126 @@
+body{
+    text-align:center ;
+      color: rgb(124, 163, 114);
+      font-size: large;
+      font-weight: bolder;
+      padding: 0;
+      margin: 0;
+      background-image: url(képek/Timi/hatter.jpg);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+  }
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li a {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(13, 12, 12);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 1px groove gray;
+  }
+  
+  li a:link{
+    background-color: rgb(137, 218, 246);
+    margin: 5px;
+  }
+  li a:hover {
+    background-color: rgb(45, 96, 113);
+  }
+  .tartalom{
+      text-align: justify;
+     
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+      text-align: center;
+    }
+    .balra{
+      margin: 30px;
+      width: 300px;
+      border: 6px double rgb(137, 218, 246);
+    }
+    .jobbra{
+      margin: 30px;
+      width: 300px;
+      border: 6px double rgb(137, 218, 246);
+    }
+    
+   main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: 
+      "h h"
+      "n n"
+      "ar as"
+      "ar as"
+      "f f"
+      ;
+    }
+  
+    header{
+      border: 6px double rgb(137, 218, 246);
+      grid-area: h;
+    }
+    nav {
+     
+      padding: 0;
+      grid-area: n;
+    }
+    article {
+     
+      grid-area: ar;
+    }
+    img{
+      margin: 30px;
+    }
+   
+  aside {
+    margin-left: 80px;
+    border: 6px double rgb(137, 218, 246);
+    grid-area: as;
+  }
+  
+  footer{
+      
+    text-align: center;
+    border: 6px double rgb(137, 218, 246);
+      grid-area: f;
+  }
+  @media only screen and (max-width: 600px) {
+    article {
+      grid-template-columns: 3fr;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 3fr;
+      grid-template-areas: 
+      "h "
+      "as"
+      "n "
+      "ar "
+      "ar"
+      "f"
+      ;
+    }
+    }

@@ -1,4 +1,5 @@
 body{
+  text-align:center ;
     color: rgb(211, 241, 250);
     font-size: large;
     font-weight: bolder;
@@ -106,7 +107,7 @@ footer{
   border: 6px double rgb(137, 218, 246);
     grid-area: f;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   article {
     grid-template-columns: 3fr;
   }
