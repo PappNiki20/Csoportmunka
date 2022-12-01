@@ -106,4 +106,20 @@ footer{
   border: 6px double rgb(137, 218, 246);
     grid-area: f;
 }
- 
+@media only screen and (max-width: 400px) {
+  article {
+    grid-template-columns: 3fr;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-areas: 
+    "h "
+    "as"
+    "n "
+    "ar "
+    "ar"
+    "f"
+    ;
+  }
+  }
